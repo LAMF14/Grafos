@@ -33,7 +33,7 @@ public class MatrizAd {
                         case 1, 0 -> {
                             matriz[i][j] = Arista;
                             if (Arista == 1) {
-                                graph.addEdge(String.valueOf(i + 1) + String.valueOf(j + 1), graph.getNode(i), graph.getNode(j), true);
+                                graph.addEdge(String.valueOf(i + 1) + (j + 1), graph.getNode(i), graph.getNode(j), true);
                             }
                         }
                         default -> System.out.println("Respuesta no valida");
@@ -54,5 +54,4 @@ public class MatrizAd {
             System.out.println(" ");
         }
     }
-
 }
